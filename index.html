@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post List</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+  <!-- js code link -->
+  <script type="text/javascript" src="./script.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="backgroundContainer">
+
+    <img id="background" src="kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="">
+  </div>
+  <header class="headerbar">
+    <div class="leftside">
+      <h2 class="Logo">
+        ScriBBler
+      </h2>
+      <h5 class="subtext">
+        Explore, Imagine, Create
+      </h5>
+    </div>
+
+    <div class="rightside">
+      <div class="d-flex justify-content-end">
+        <button type="button" id="signin-button" class="btn btn-primary mx-2">Sign In</button>
+        <button type="button" id="signup-button" class="btn btn-outline-primary">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- <button type="button" id="signup-button" class="btn btn-outline-primary">Sign Up</button> -->
+
+
+  <!-- centre button of main window -->
+
+
+
+
+
+  <div class="centrebuttons">
+    <button type="button" id="allpost" class="btn btn-warning" onclick="location.href='postlist.html'">All Post</button>
+    <button type="button" id="createpost" class="btn btn-warning">Create Post</button>
+  </div>
+
+
+
+  <!-- sIGN UP MODAL -->
+  <div id="signup-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="signup-form">
+        <h2 class="modal-title">Get Started</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <label for="repassword">Re-enter Password</label>
+        <input type="password" id="repassword" name="repassword" placeholder="Re-enter your Password">
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="signin-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="signin-form">
+        <h2 class="modal-title">Welcome Back!</h2>
+        <label class="lblforform" for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <label class="lblforform" for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <button type="submit">Sign in</button>
+
+        <p class="signup-text">Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+
+      </form>
+    </div>
+  </div>
+
+  <div id="create-post-modal" class="modal">
+    <div class="createpost-modal-content">
+      <span class="close">&times;</span>
+      <form id="create-post-form">
+        <h2>Pen Your Post</h2>
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Enter title of your post">
+        <label for="contents">Contents</label>
+        <textarea id="contents" placeholder="Enter the contents of your post"></textarea>
+        <button class="create-btn">Create</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include JS script -->
+ 
+  <script type="text/javascript" src="./script.js"></script>
+
+</body>
+
+</html>

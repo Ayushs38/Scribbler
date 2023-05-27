@@ -1,0 +1,172 @@
+html {
+	margin: 0;
+	min-height: 100%;
+}
+
+* {
+	/* border: solid 1px red;  */
+}
+
+body {
+	margin: 0;
+}
+
+#background {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	/* top: 5%; */
+	left: 0;
+	right: 0;
+	filter:contrast(1.5);
+	z-index: -2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.703),rgba(26, 26, 26, 0)) , url(EauDp1hUcAAE-bK.jpg);
+
+}
+
+.headerbar {
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    
+
+}
+
+.leftside {
+	flex: 1;
+}
+
+.rightside {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+}
+
+.Logo {
+	margin: 0;
+	font-family: 'Montez', cursive;
+}
+
+.subtext {
+	margin: 0;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+/* .btn {
+	  margin: 0 10px;
+	} */
+.subtext {
+	margin: 0;
+	font-family: 'Ubuntu Mono', monospace;
+
+}
+
+.post-container{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 20px;
+	background-color: rgba(0, 0, 0, 0.162);
+	color:rgb(0, 0, 0);
+	padding: 30px;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.heading{
+	text-align: center;
+	font-weight: 700;
+}
+
+.username{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.post-content{
+	background-color: rgba(240, 248, 255, 0.717);
+	padding: 10px;
+	font-weight: 550;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+
+
+.audience-reaction{
+	margin-top: 10px;
+	
+}
+
+button{
+	background-color: rgb(243, 51, 51);
+	border: none;
+	border-radius: 10px;
+}
+button:hover{
+	cursor:pointer;
+	transform: scale(1.1);
+
+}
+
+
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+	width: 500px;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+.green-border-focus .form-control:focus {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+
+
+
+.comment {
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	list-style-type :none;
+	font-weight: 500;
+	font-family: arial;
+  }
+  
+  .comment p {
+	margin: 0;
+
+  }
+
+  #comment-list{
+	list-style-type: none;
+  }
+
+  .all-comments{
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: rgba(210, 208, 208, 0.629);
+  }
+
+.comment-heading{
+	font-size: 2rem;
+
+}
+  .comment-submit{
+	margin-top: 20px;
+  }
+
+
+  .editable {
+	border: 3px solid rgb(186, 71, 90);
+  }
+  

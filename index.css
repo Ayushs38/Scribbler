@@ -1,0 +1,170 @@
+/* Global Styles */
+html {
+    margin: 0;
+    min-height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header Styles */
+  .headerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Logo {
+    margin: 0;
+    font-family: 'Montez', cursive;
+    font-size: 24px;
+  }
+  
+  .subtext {
+    margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+  }
+  
+  .rightside {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn {
+    margin: 0 5px;
+  }
+  
+  /* Center Buttons Styles */
+  .centrebuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centrebuttons button {
+    margin-right: 10px;
+  }
+  
+  .centrebuttons button:last-child {
+    margin-right: 0;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .modal-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Form Styles */
+  form {
+    width: 100%;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form label {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  form button[type="submit"],
+  .create-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+  }
+  
+  form button[type="submit"]:hover,
+  .create-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .signup-text a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Background Image Container */
+  .backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  #background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

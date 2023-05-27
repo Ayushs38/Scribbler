@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTLIST</title>
+    <link rel="stylesheet" href="postlist.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ef3013402f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <!-- js code link -->
+    <!-- <script type="text/javascript" src=".js"></script> -->
+
+</head>
+
+<body>
+
+
+    <div class="backgroundContainer">
+
+        <!-- <img id="background" src="david-marcu-78A265wPiO4-unsplash.jpg" alt=""> -->
+        <img id="background"
+            src="https://images.unsplash.com/photo-1433838552652-f9a46b332c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt="">
+    </div>
+    <header class="headerbar">
+        <div class="leftside">
+            <h2 class="Logo">
+                ScriBBler
+            </h2>
+            <h5 class="subtext">
+                Explore, Imagine, Create
+            </h5>
+        </div>
+
+        <div class="rightside">
+            <div class="d-flex justify-content-end">
+                <button type="button" id="signin-button" class="btn btn-primary mx-2">Sign In</button>
+                <button type="button" id="signup-button" class="btn btn-outline-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="posts-container">
+        <div class="post">
+
+            <div class="username">
+                <p>Srishti Gupta</p>
+            </div>
+            <div class="content-side">
+                <div class="heading">
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+                </div>
+                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare
+                    a
+                    variable of any type (datatype) in JavaScript. Though all the three keywords are used for the
+                    same
+                    purpose, they are different.</p>
+                <span>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+
+
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="post">
+            <div class="username">
+                <p>Colby Fayock</p>
+            </div>
+
+            <div class="content-side">
+                <div class="heading">
+                    <p>What is linting and how can it save you time?</p>
+                    <span>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get
+                    more
+                    of, but linting can help us make the most out of the time we have.</p>
+                <span>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="post">
+            <div class="username">
+                <p>Yazeed Bzadough</p>
+            </div>
+
+            <div class="content-side">
+                <div class="heading">
+                    <p>How to Get More Views on Your Tech Blog</p>
+                    <span>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a
+                    blog,
+                    YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable
+                    name
+                    in
+                    the industry.</p>
+                <span>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="post">
+            <div class="username">
+                <p>Cedd Burge</p>
+            </div>
+
+            <div class="content-side">
+                <div class="heading">
+                    <p>How to write easily describable code</p>
+                    <span>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+                <p>When code is not describable using words, most people have to do some mental mapping to turn it
+                    in to
+                    words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different
+                    people
+                    will map to different words, which
+                    leads to confusion when discussing the code.</p>
+                <span>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="post"  onclick="location.href='post.html'">
+            <div class="username">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="content-side">
+                <div class="heading">
+                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+
+                </div>
+                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file
+                    containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you
+                    can
+                    say
+                    that you’ve created a module
+                    named xyz.</p>
+                <span>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- post 5 ends here -->
+
+    <!-- TODO: Write code for delete post modal here -->
+
+
+
+
+    <!-- Include JS script -->
+
+
+
+</body>
+
+</html>

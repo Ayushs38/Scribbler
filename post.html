@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTLIST</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ef3013402f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <!-- js code link -->
+    <!-- <script type="text/javascript" src=".js"></script> -->
+    <script type="text/javascript" src="post.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="backgroundContainer">
+
+        <!-- <img id="background" src="david-marcu-78A265wPiO4-unsplash.jpg" alt=""> -->
+        <img id="background" src="./godwill-gira-mude-iEK1IAlvKqc-unsplash.jpg" alt="">
+    </div>
+    <header class="headerbar">
+        <div class="leftside">
+            <h2 class="Logo">
+                ScriBBler
+            </h2>
+            <h5 class="subtext">
+                Explore, Imagine, Create
+            </h5>
+        </div>
+
+        <div class="rightside">
+            <div class="d-flex justify-content-end">
+                <button type="button" id="signin-button" class="btn btn-primary mx-2">Sign In</button>
+                <button type="button" id="signup-button" class="btn btn-outline-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <div class="post-container">
+        <div class="heading">
+            <h3 id="post-title" contenteditable="false">Everything you should know about ‘module’ & ‘require’ in Node.js
+            </h3>
+        </div>
+
+        <div class="username">
+            <h4>Srishti Gupta</h4>
+            <span>
+                <button id="edit-button" onclick="enableEditMode()">Edit <i class="fa-regular fa-pen-to-square"></i></button>
+                <button id="save-button" onclick="saveChanges()">Save <i class="fa-regular fa-floppy-disk"></i></button>
+            </span>
+        </div>
+
+
+        <div class="post-content">
+            <p id="post-text"  contenteditable="false">In Node.js, modules play a crucial role in structuring and organizing code. A module is a
+                self-contained
+                unit of code that encapsulates related functionality, allowing developers to break down their
+                applications into smaller, manageable pieces. This promotes code reuse, maintainability, and separation
+                of concerns.
+
+                To create a module, you typically define your code in a separate JavaScript file. Within that file, you
+                encapsulate the functions, variables, or classes you want to export using the module.exports object or
+                by assigning directly to exports. This allows other parts of your application to access and utilize the
+                exported functionality.
+
+                When you need to use a module in your code, you use the require function. By providing the path to the
+                module file, require returns an object representing the exported module. This object can be assigned to
+                a variable, allowing you to access the exported functions, variables, or classes and use them within
+                your code.
+
+                Node.js also provides core modules, such as fs for file system operations or http for network
+                communication, which can be directly accessed using require without the need for additional
+                installation.
+
+                It's important to note that Node.js caches required modules by default. Once a module is loaded and
+                executed, subsequent require calls for the same module will return a cached copy. This caching mechanism
+                improves performance but also means that changes made to a module's file will not be reflected until the
+                application is restarted.
+
+                Overall, understanding modules and utilizing the require function effectively is crucial for building
+                modular, maintainable, and scalable Node.js applications. They enable developers to divide their
+                codebase into manageable units and leverage existing functionality, resulting in more efficient
+                development and easier code maintenance.</p>
+        </div>
+        <div audience-reaction>
+            <span>
+                <button onclick="increaseLikeCount()">Like <i class="fa-regular fa-thumbs-up"></i></button>
+            </span> <br>
+
+            <span id="like-count">0 person liked this!</span><br><br>
+
+            <div class="form-group purple-border">
+
+                <textarea class="form-control" id="comment-input" rows="3" placeholder="Leave a comment"></textarea>
+                <button class="comment-submit" id="comment-submit">Comment</button>
+            </div>
+
+            <div class="Comment-box">
+                <h6 class="comment-heading">All comments</h6>
+                <div class="all-comments">
+                    <ul id="comment-list"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
